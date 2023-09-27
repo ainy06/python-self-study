@@ -2,8 +2,6 @@ counter = 0
 
 
 def fibonacci(n):
-    print("fibonacci({})".format(n))
-    global counter
     counter += 1
     if n == 1:
         return 1
@@ -11,8 +9,6 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
+    
 
-
-fibonacci(10)
-print("---")
-print("fibonacci(10) 계산에 활용된 횟수는 {}입니다.".format(counter))
+print(fibonacci(10))
